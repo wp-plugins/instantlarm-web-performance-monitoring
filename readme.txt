@@ -43,6 +43,8 @@ Some of the features of instant@larm are:
 == Changelog ==
 
 = 1.0.1 =
+* Add header
+* Add icon
 * Small fixes
 
 = 1.0.0 =
