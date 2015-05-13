@@ -3,7 +3,7 @@ Contributors: Digicure
 Tags: web, performance, monitoring
 Requires at least: 4.0.0
 Tested up to: 4.2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ Some of the features of instant@larm are:
 1. Default view of the plugin.
 
 == Changelog ==
+
+= 1.0.2 =
+* API now uses HTTPS
 
 = 1.0.1 =
 * Add header
