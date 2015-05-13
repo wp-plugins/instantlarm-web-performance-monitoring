@@ -1,9 +1,9 @@
 === instant@larm - Web Performance Monitoring ===
 Contributors: Digicure
-Tags: webperformance, performance, monitoring
+Tags: web, performance, monitoring
 Requires at least: 4.0.0
 Tested up to: 4.2.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,7 +11,7 @@ This plugin allows you to add performance monitoring to your wordpress page with
 
 == Description ==
 
-This plugin allows you to add performance monitoring to your wordpress page within a couple of minutes. In very few clicks you have an uptime monitoring job up and running on your wordpress page!
+This plugin allows you to add performance monitoring to your wordpress page within a couple of minutes. In very few clicks you have an uptime monitoring job up and running on your WordPress page!
 
 Some of the features of instant@larm are:
 
@@ -36,7 +36,14 @@ Some of the features of instant@larm are:
 1. Fill out the data for your wordpress installation.
 1. Create your free monitoring job.
 
+== Screenshots ==
+
+1. Default view of the plugin.
+
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+* Small fixes
+
+= 1.0.0 =
 * Initial version.
