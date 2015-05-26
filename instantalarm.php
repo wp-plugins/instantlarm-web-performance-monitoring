@@ -3,7 +3,7 @@
 Plugin Name: instant@larm - Web Performance Monitoring
 Plugin URI: wordpress.com/plugins/instantalarm
 Description: This plugin allows you to add performance monitoring to your wordpress page within a couple of minutes.
-Version: 1.0.2
+Version: 1.0.3
 Author: Digicure
 Author URI: http://instantalarm.dk
 License: GPL2
@@ -128,7 +128,7 @@ function currentUrl() {
 }
 function IA_SetAlarms($apiToken, $uptimeId, $username) {
 	global $apiUrl;
-	$url = $apiUrl.$apiToken.'/uptime/thresholdalarms?id='.$uptimeId.'&username='.$username;
+	$url = $apiUrl.$apiToken.'/uptime/thresholdalarms?id='.$uptimeId.'&email='.$username;
 	$args = array(
 		'timeout' => 45,
 		'blocking' => true,
