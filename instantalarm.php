@@ -3,7 +3,7 @@
 Plugin Name: instant@larm - Web Performance Monitoring
 Plugin URI: wordpress.com/plugins/instantalarm
 Description: This plugin allows you to add performance monitoring to your wordpress page within a couple of minutes.
-Version: 1.0.3
+Version: 1.0.4
 Author: Digicure
 Author URI: http://instantalarm.dk
 License: GPL2
@@ -22,7 +22,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with instant@larm uptime monitoring setup. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 */
-$apiUrl = 'http://localhost:7492/api/';
+$apiUrl = 'https://portal.instantalarm.dk/api/';
 // Do nothing if plugin is called directly
 if (!function_exists('add_action'))
 	exit;
