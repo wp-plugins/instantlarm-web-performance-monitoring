@@ -22,7 +22,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with instant@larm uptime monitoring setup. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 */
-$apiUrl = 'https://portal.digicure.dk/api/';
+$apiUrl = 'http://localhost:7492/api/';
 // Do nothing if plugin is called directly
 if (!function_exists('add_action'))
 	exit;
@@ -162,6 +162,24 @@ function IA_GetFirstJobId($apiToken) {
 	else
 		return $response_code;
 }
+function IA_SendWelcomeMail($email) {
+	$subject = 'Thanks for your interest in instant@alarm – a web performance monitoring service.';
+	$body = 'Thanks for your interest in instant@alarm – a web performance monitoring service.<br>
+	<br>
+We have already created your Uptime Monitoring job, which will alert whenever your Wordpress site is unavailable. You’ll automatically receive an e-mail alert, when it happens. <br>
+<br>
+<b>Try the FULL instant@larm version – 30 days FREE trial</b><br>
+If you want to try the FULL instant@larm version, it’s possible to try it for 30 days. The full version gives you detailed information, statistics and reports about your web performance around the world. <br>
+<br>
+You can read more about the FULL version and all the features here: <br>
+<br>
+<a href="http://signup.instantalarm.dk">Get the 30 days free trial HERE</a><br>
+<br>
+<b>Feedback and support</b><br>
+We really appreciate feedback. So if you have any feedback, of any kind – please let us now. You’re welcome to send an e-mail to <a href="mailto:support@instantalarm.dk">support@instantalarm.dk</a>. Also, if you experience any problems with the plugin! Thank you.';
+	$headers = 'From: Digicure Support <support@digicure.dk>'."\r\n".'Content-type: text/html'."\r\n";
+	wp_mail($email, $subject, $body, $headers);
+}
 // Output settings page
 function uptime_monitoring_page() {
 	// Include bootstrap for styling
@@ -189,6 +207,7 @@ function uptime_monitoring_page() {
 					update_option('IA_protocol', $_POST['protocol']);
 					update_option('IA_url', $_POST['url']);
 					$message = 'User and job has been created.';
+					IA_SendWelcomeMail($_POST['email']);
 				}
 				else
 					$message = 'Could not create uptime job.';

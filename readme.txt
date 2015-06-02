@@ -1,9 +1,9 @@
 === instant@larm - Web Performance Monitoring ===
 Contributors: Digicure
 Tags: web, performance, monitoring, uptime monitoring, website alert
-Requires at least: 4.0.0
+Requires at least: 3.0
 Tested up to: 4.2.2
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,6 +52,9 @@ Read more about instant@larm here: [http://www.instantalarm.dk](http://www.insta
 1. Default view of the plugin.
 
 == Changelog ==
+
+= 1.0.4 =
+* Add welcome mail
 
 = 1.0.3 =
 * Use new API method
