@@ -22,7 +22,8 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with instant@larm uptime monitoring setup. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 */
-$apiUrl = 'https://portal.instantalarm.dk/api/';
+$apiUrl = 'https://portal.digicure.dk/api/';
+//$apiUrl = 'http://localhost:7492/api/';
 // Do nothing if plugin is called directly
 if (!function_exists('add_action'))
 	exit;
